@@ -1,0 +1,55 @@
+.block-name {
+  display: grid;
+  grid-template-columns: 1fr 50%;
+  justify-items: stretch;
+  text-align: center;
+  padding: 150px 0;
+  justify-items: center;
+
+  &__subtitle {
+    font-size: 19px;
+    line-height: 28px;
+    text-transform: uppercase;
+    grid-column: 1/2;
+  }
+
+  &__title {
+    font-size: calc(38px + (65 - 38) * ((100vw - 288px) / (780 - 288)));
+    line-height: calc(50px + (73 - 50) * ((100vw - 288px) / (780 - 288)));
+    font-weight: 400;
+    font-size: 65px;
+    line-height: 73px;
+    grid-column: 1/2;
+  }
+
+  &__button {
+    font-size: 15px;
+    line-height: 60px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    width: 360px;
+    height: 64px;
+    border: 1px solid $textcolor;
+    grid-column: 1/2;
+    align-self: center;
+
+    &:hover {
+      background-color: $textcolor;
+      color: $foncolor;
+      opacity: 1;
+    }
+  }
+
+  &__img {
+    grid-column: 2/3;
+    grid-row: 1/5;
+    width: 100%;
+
+    &::before {
+      content: '';
+      width: 0;
+      height: 0;
+      padding-top: calc(720 / 1440 * 100%);
+    }
+  }
+}

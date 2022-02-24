@@ -1,0 +1,25 @@
+.subscription {
+  min-height: 317px;
+  display: grid;
+  border-top: 1px solid $textcolor;
+  grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
+
+  &__title {
+    margin-block: 0;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 46px;
+    line-height: 46px;
+    grid-column: 1/2;
+    padding: 50px 50px 16px;
+  }
+
+  &__subtitle {
+    margin-block: 0;
+    padding-left: 50px;
+    grid-column: 1/2;
+    font-size: 19px;
+    line-height: 28px;
+  }
+}
+
