@@ -1,12 +1,14 @@
 @font-face {
-  src: url("./fonts/SourceSansPro-Regular.ttf") format("ttf");
+  src: url(../vendor/fonts/sourcesanspro.woff2) format("woff2"),
+  url(../vendor/fonts/sourcesanspro.woff) format("woff");
   font-family: "SourceSansPro";
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
-  src: url("./fonts/SourceSansPro-Light.ttf") format("ttf");
+  src: url(../vendor/fonts/sourcesansprolight.woff2) format("woff2"),
+  url(../vendor/fonts/sourcesansprolight.woff) format("woff");
   font-family: "SourceSansPro";
   font-weight: 300;
   font-style: normal;

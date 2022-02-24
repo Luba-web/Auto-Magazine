@@ -10,32 +10,39 @@
   <body class="page">
     <header class="header">
       <nav>
-        <ul class="header__links">
-          <li class="header__link">Факты</li>
-          <li class="header__link">ГАЛЕРЕЯ</li>
-          <li class="header__link">ПРЕССА</li>
+        <ul class="header__nav">
+          <li class="header__links"><a href="#fact" class="header__link">Факты</a></li>
+          <li class="header__links"><a href="#galery" class="header__link">ГАЛЕРЕЯ</a></li>
+          <li class="header__links"><a href="#pressa" class="header__link">ПРЕССА</a></li>
         </ul>
+        <button id="icon-close" class="button header__button" type="button"><img
+          class=""
+          src="./images/close.svg"
+          alt="кнопка закрытия"
+        /></button>
       </nav>
       <img
-        class="logo logo_place_header"
-        src="./images/AUTO-MAGAZINE.svg"
-        alt="автомобильный магазин"
-      />
-      <button class="button header__button" type="button">X</button>
-      <!--   <button class="button header__button header__menu" type="button"></button>-->
+      class="logo logo_place_header"
+      src="./images/logo.svg"
+      alt="автомобильный магазин"
+    />
+      <button id="ikon-menu" class="button header__button header__menu" type="button"><img
+        class=""
+        src="./images/icon-menu.svg"
+        alt="кнопка меню"
+      /></button>
     </header>
     <section class="block-name">
       <p class="block-name__subtitle">volkswagen T1</p>
       <h1 class="block-name__title">Новая версия популярного микроавтобуса</h1>
       <p class="block-name__subtitle">С ЭЛЕКТРО ДВИГАТЕЛЕМ</p>
       <img class="block-name__img"
-      src="./images/Rectangle.jpg"
+      src="./images/rectangle.jpg"
       alt="машина">
       <button class="button block-name__button" type="button">Подробнее</button>
     </section>
-    <section class="grid-block">
-      <p class="grid-block__history">
-        <span class="grid-block__bold">T1 Electro:</span> Отделение Volkswagen
+    <section class="grid-block" id="fact">
+      <p class="grid-block__history"><span class="grid-block__bold">T1 Electro:</span> Отделение Volkswagen
         Commercial Vehicles представило концепт e-Bulli: классический вэн T1
         1966 года с электрической силовой установкой. По словам производителя,
         проект получит коммерческое продолжение, и через фирму-партнера
@@ -58,37 +65,37 @@
         </ul>
       </div>
     </section>
-    <section class="galery">
+    <section class="galery" id="galery">
       <img
         id="photoFirst"
-        src="./images/Rectangle1.jpg"
+        src="./images/rectangle1.jpg"
         alt="машина"
         class="galery__photo galery__photo_active"
       />
-    <!--<img id="photoSecond" src="./images/Rectangle2.jpg" alt="салон машины" class="galery__photo">
-        <img id="photoThri" src="./images/Rectangle3.jpg" alt="салон машины" class="galery__photo">-->
+    <!--<img id="photoSecond" src="./images/rectangle2.jpg" alt="салон машины" class="galery__photo">
+        <img id="photoThri" src="./images/rectangle3.jpg" alt="салон машины" class="galery__photo">-->
       <h2 class="subtitle">Галерея</h2>
       <div class="galery__btns">
-        <button type="button" class="button"><img
-          class="galery_btn-forward"
+        <button id="btnArrow" type="button" class="button"><img
+          class="galery__btn-forward"
           src="./images/arrow.svg"
           alt="стрелка вперед"
         /></button>
-        <button type="button" class="button"><img
-          class="galery_btn-back"
+        <button id="btnArrowBack" type="button" class="button"><img
+          class="galery__btn-back"
           src="./images/arrowback.svg"
           alt="стрелка назад"
         /></button>
       </div>
     </section>
-    <section class="pressa">
+    <section class="pressa" id="pressa">
       <h2 class="subtitle">Пресса</h2>
       <a href="#" class="pressa__link pressa__link_one"><span class="pressa__bold">Engadget:</span> VW’s e-BULLI concept shows how your classic van can become an EV.</a>
       <!--<a href="#" class="pressa__link_two"><span class="text-bold">Engadget: </span>VW’s e-BULLI concept shows how your classic van can become an EV.</a>-->
       <div class="pressa__blockBtn">
         <div class="pressa__block-radio">
-          <input class="custom-radio" name="color" type="radio" id="1" checked>
-          <input class="custom-radio" name="color" type="radio" id="2">
+          <button class="custom-radio custom-radio_active" name="color" type="radio" id="btnRadioOne"></button>
+          <button class="custom-radio" name="color" type="radio" id="btnRadioTwo"></button>
         </div>
         <button class="button pressa__button" type="button">Читать</button>
       </div>
@@ -121,15 +128,15 @@
           value="ПОЧТА"
           required
         />
-        <button class="form__btn" type="submit">Подписка</button>
+        <button id="btnSave" class="form__btn" type="submit">Подписка</button>
       </form>
     <div class="footer">
       <img
         class="logo logo_place_footer"
-        src="./images/AUTO-MAGAZINE.svg"
+        src="./images/logo.svg"
         alt="автомобильный магазин"
       />
-      <p class="footer__copyright">2022</p>
+      <p class="footer__copyright">&copy; Auto-Magazine 2021</p>
     </div>
     </footer>
   </body>

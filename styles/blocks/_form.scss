@@ -1,11 +1,17 @@
 .form {
+  box-sizing: border-box;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(10px, 1fr));
-  padding: 50px;
-  max-width: 340px;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  padding: 95px 0 50px 50px;
+  width: 340px;
   text-align: center;
+  font-size: 9px;
+  line-height: 18px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
 
   &__first-name {
+    height: 31px;
     padding-left: 11px;
     border: 1px solid $textcolor;
     background-color: $foncolor;
@@ -15,6 +21,7 @@
   }
 
   &__second-name {
+    height: 31px;
     padding-left: 11px;
     border: 1px solid $textcolor;
     background-color: $foncolor;
@@ -24,6 +31,7 @@
   }
 
   &__email {
+    height: 31px;
     padding-left: 11px;
     border: 1px solid $textcolor;
     background-color: $foncolor;
@@ -33,6 +41,7 @@
   }
 
   &__btn {
+    width: 80px;
     border: none;
     background-color: $textcolor;
     color: $foncolor;

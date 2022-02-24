@@ -5,6 +5,7 @@
   min-height: 500px;
 
   &__link {
+    font-weight: 300;
     padding: 50px;
     text-decoration: none;
     color: $textcolor;
@@ -25,15 +26,20 @@
     height: 52px;
     border: 1px solid $textcolor;
     border-radius: 70%;
+
+    &:hover {
+      background-color: $textcolor;
+      color: $foncolor;
+      opacity: 1;
+    }
   }
 
   &__block-radio {
     display: inline-block;
     position: relative;
-    padding: 10px 0 15px;
   }
 
   &__bold {
-    font-weight: 500;
+    font-weight: 400;
   }
 }

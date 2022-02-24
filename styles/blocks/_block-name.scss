@@ -16,6 +16,7 @@
   &__title {
     font-size: calc(38px + (65 - 38) * ((100vw - 288px) / (780 - 288)));
     line-height: calc(50px + (73 - 50) * ((100vw - 288px) / (780 - 288)));
+    font-weight: 400;
     font-size: 65px;
     line-height: 73px;
     grid-column: 1/2;
@@ -31,6 +32,12 @@
     border: 1px solid $textcolor;
     grid-column: 1/2;
     align-self: center;
+
+    &:hover {
+      background-color: $textcolor;
+      color: $foncolor;
+      opacity: 1;
+    }
   }
 
   &__img {

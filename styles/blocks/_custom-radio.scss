@@ -1,35 +1,17 @@
 .custom-radio {
   cursor: pointer;
   margin-right: 14px;
+  width: 12px;
+  height: 12px;
+  border-radius: 12px;
+  border: 1px solid $textcolor;
+  background-color: transparent;
 
-  &::after {
-    content: " ";
-    overflow: visible;
-    box-sizing: border-box;
-    position: absolute;
-    width: 12px;
-    height: 12px;
-    border-radius: 12px;
-    border: 1px solid $textcolor;
-    background-color: transparent;
-  }
-
-  &:checked::before {
-    box-sizing: border-box;
-    border-radius: 12px;
-    width: 12px;
-    height: 12px;
-    position: absolute;
-    content: " ";
-    overflow: visible;
-    background: $textcolor;
+  &_active {
+    background-color: $textcolor;
   }
 
   &:hover {
     opacity: 0.3;
-  }
-
-  &:focus-visible {
-    color: $textcolor;
   }
 }
