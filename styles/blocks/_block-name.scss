@@ -2,27 +2,73 @@
   display: grid;
   grid-template-columns: 1fr 50%;
   justify-items: stretch;
+  align-items: center;
   text-align: center;
   padding: 150px 0;
   justify-items: center;
 
+  @media screen and (max-width: 1100px) {
+    /* стили для планшета */
+    padding: 100px 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  @media screen and (max-width: 720px) {
+    /* стили для планшета */
+    padding: 60px 20px 62px;
+  }
+
   &__subtitle {
+    margin-block: 0;
+    margin-top: 10px;
     font-size: 19px;
     line-height: 28px;
     text-transform: uppercase;
     grid-column: 1/2;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+
+    @media screen and (max-width: 1100px) {
+      /* стили для планшета */
+      margin-top: 0;
+    }
+
+    @media screen and (max-width: 720px) {
+      /* стили для планшета */
+      font-size: calc(11px + (19 - 11) * ((100vw - 288px) / (720 - 288)));
+      line-height: calc(14px + (28 - 14) * ((100vw - 288px) / (720 - 288)));
+    }
   }
 
   &__title {
-    font-size: calc(38px + (65 - 38) * ((100vw - 288px) / (780 - 288)));
-    line-height: calc(50px + (73 - 50) * ((100vw - 288px) / (780 - 288)));
-    font-weight: 400;
+    margin: 0;
+    margin-block: 0;
+    font-weight: $regularFont;
     font-size: 65px;
     line-height: 73px;
     grid-column: 1/2;
+    width: 100%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    padding: 0 20px;
+
+    @media screen and (max-width: 1100px) {
+      /* стили для планшета */
+      padding: 30px 0 52px;
+    }
+
+    @media screen and (max-width: 720px) {
+      /* стили для планшета */
+      padding: 26px 0;
+      font-size: calc(36px + (65 - 36) * ((100vw - 288px) / (720 - 288)));
+      line-height: calc(50px + (73 - 50) * ((100vw - 288px) / (720 - 288)));
+    }
   }
 
   &__button {
+    margin: 12px;
     font-size: 15px;
     line-height: 60px;
     letter-spacing: 1px;
@@ -31,7 +77,16 @@
     height: 64px;
     border: 1px solid $textcolor;
     grid-column: 1/2;
-    align-self: center;
+
+    @media screen and (max-width: 1100px) {
+      /* стили для планшета */
+      margin: 0;
+    }
+
+    @media screen and (max-width: 720px) {
+      /* стили для планшета */
+      width: 100%;
+    }
 
     &:hover {
       background-color: $textcolor;
@@ -41,15 +96,21 @@
   }
 
   &__img {
+    box-sizing: border-box;
     grid-column: 2/3;
     grid-row: 1/5;
     width: 100%;
 
-    &::before {
-      content: '';
-      width: 0;
-      height: 0;
-      padding-top: calc(720 / 1440 * 100%);
+    @media screen and (max-width: 1100px) {
+      /* стили для планшета */
+      padding: 0 34px;
+      margin: 92px 0;
+    }
+
+    @media screen and (max-width: 720px) {
+      /* стили для планшета */
+      margin: 54px 0;
+      padding: 0;
     }
   }
 }
