@@ -1,0 +1,25 @@
+//подлючение шрифтов и normalize
+@import "../vendor/fonts";
+@import "../vendor/normalize";
+
+//импорт переменных
+@import "./variables/index.scss";
+
+//импорт мексинов
+@import "./mixins/index.scss";
+
+//импорт блоков
+@import "./blocks/page";
+@import "./blocks/header";
+@import "./blocks/block-bar";
+@import "./blocks/logo";
+@import "./blocks/button";
+@import "./blocks/block-name";
+@import "./blocks/grid-block";
+@import "./blocks/subtitle";
+@import "./blocks/gallery";
+@import "./blocks/pressa";
+@import "./blocks/subscription";
+@import "./blocks/custom-radio";
+@import "./blocks/form";
+@import "./blocks/footer";

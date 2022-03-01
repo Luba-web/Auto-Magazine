@@ -1,0 +1,16 @@
+.block-bar {
+  overflow: visible;
+  opacity: 1;
+  transition: visibility 0.2s, opacity 0.2s linear;
+
+  @media screen and (max-width: 1100px) {
+    /* стили для планшета */
+    overflow: hidden;
+    opacity: 0;
+  }
+
+  &_opened {
+    overflow: visible;
+    opacity: 1;
+  }
+}
