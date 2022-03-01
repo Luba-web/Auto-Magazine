@@ -13,7 +13,7 @@
       -ms-transform: translate(-50%, -50%);
       transform: translate(-50%, -50%);
 
-      @media screen and (max-width: 720px) {
+      @media screen and (max-width: $tablets) {
         /* стили для планшета */
         width: 100px;
         height: 20px;
@@ -23,7 +23,7 @@
     &_footer {
       justify-self: end;
 
-      @media screen and (max-width: 720px) {
+      @media screen and (max-width: $tablets) {
         margin-top: 82px;
       }
     }

@@ -8,11 +8,11 @@
   justify-content: space-between;
   border-left: 1px solid $textcolor;
 
-  @media screen and (max-width: 1100px) {
+  @media screen and (max-width: $desktop) {
     border: none;
   }
 
-  @media screen and (max-width: 720px) {
+  @media screen and (max-width: $tablets) {
     border-top: 1px solid $textcolor;
     padding: 20px;
     align-items: stretch;
@@ -25,7 +25,7 @@
     letter-spacing: 1px;
     grid-column: 2/3;
 
-    @media screen and (max-width: 720px) {
+    @media screen and (max-width: $tablets) {
       margin-top: 20px;
       margin-left: 10px;
     }

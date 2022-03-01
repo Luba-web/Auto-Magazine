@@ -11,7 +11,7 @@
   white-space: nowrap;
   overflow: hidden;
 
-  @media screen and (max-width: 720px) {
+  @media screen and (max-width: $tablets) {
     padding: 20px 0 20px 20px;
     font-size: calc(24px + (46 - 24) * ((100vw - 288px) / (720 - 288)));
     line-height: calc(24px + (46 - 24) * ((100vw - 288px) / (720 - 288)));
@@ -20,7 +20,7 @@
   &_desabled {
     display: block;
 
-    @media screen and (max-width: 1100px) {
+    @media screen and (max-width: $desktop) {
       display: none;
     }
   }

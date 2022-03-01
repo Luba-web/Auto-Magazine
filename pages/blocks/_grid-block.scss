@@ -5,12 +5,12 @@
   border-top: 1px solid $textcolor;
   width: 100%;
 
-  @media screen and (max-width: 1100px) {
+  @media screen and (max-width: $desktop) {
     /* стили для планшета */
     grid-template-columns: none;
   }
 
-  @media screen and (max-width: 720px) {
+  @media screen and (max-width: $tablets) {
     /* стили для планшета */
     display: flex;
     flex-direction: column;
@@ -26,7 +26,7 @@
     text-overflow: ellipsis;
     overflow: hidden;
 
-    @media screen and (max-width: 720px) {
+    @media screen and (max-width: $tablets) {
       /* стили для планшета */
       font-size: 16px;
       line-height: 27px;
@@ -42,7 +42,7 @@
     border-left: 1px solid $textcolor;
     padding: 41px 2px 0 50px;
 
-    @media screen and (max-width: 1100px) {
+    @media screen and (max-width: $desktop) {
       /* стили для планшета */
       border: none;
       border-top: 1px solid $textcolor;
@@ -54,7 +54,7 @@
       }
     }
 
-    @media screen and (max-width: 720px) {
+    @media screen and (max-width: $tablets) {
       /* стили для планшета */
       border-right: none;
       padding: 20px;
@@ -79,7 +79,7 @@
     white-space: nowrap;
     overflow: hidden;
 
-    @media screen and (max-width: 720px) {
+    @media screen and (max-width: $tablets) {
       /* стили для планшета */
       margin-bottom: 40px;
       font-size: 22px;
@@ -97,7 +97,7 @@
     white-space: nowrap;
     overflow: hidden;
 
-    @media screen and (max-width: 720px) {
+    @media screen and (max-width: $tablets) {
       /* стили для планшета */
       margin-top: 6px;
       font-size: 16px;
