@@ -4,7 +4,7 @@
   border-top: 1px solid $textcolor;
   grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
 
-  @media screen and (max-width: 720px) {
+  @media screen and (max-width: $tablets) {
     display: block;
   }
 
@@ -19,7 +19,7 @@
     text-overflow: ellipsis;
     overflow: hidden;
 
-    @media screen and (max-width: 720px) {
+    @media screen and (max-width: $tablets) {
       padding-left: 20px;
       font-size: 14px;
       line-height: 14px;

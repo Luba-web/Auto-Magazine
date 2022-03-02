@@ -7,16 +7,16 @@
   padding: 150px 0;
   justify-items: center;
 
-  @media screen and (max-width: 1100px) {
+  @media screen and (max-width: $desktop) {
     /* стили для планшета */
     padding: 100px 0;
     display: flex;
     flex-direction: column;
   }
 
-  @media screen and (max-width: 720px) {
+  @media screen and (max-width: $tablets) {
     /* стили для планшета */
-    padding: 60px 20px 62px;
+    padding: 60px 20px;
   }
 
   &__subtitle {
@@ -30,12 +30,12 @@
     white-space: nowrap;
     overflow: hidden;
 
-    @media screen and (max-width: 1100px) {
+    @media screen and (max-width: $desktop) {
       /* стили для планшета */
       margin-top: 0;
     }
 
-    @media screen and (max-width: 720px) {
+    @media screen and (max-width: $tablets) {
       /* стили для планшета */
       font-size: calc(11px + (19 - 11) * ((100vw - 288px) / (720 - 288)));
       line-height: calc(14px + (28 - 14) * ((100vw - 288px) / (720 - 288)));
@@ -54,16 +54,16 @@
     overflow: hidden;
     padding: 0 20px;
 
-    @media screen and (max-width: 1100px) {
+    @media screen and (max-width: $desktop) {
       /* стили для планшета */
       padding: 30px 0 52px;
     }
 
-    @media screen and (max-width: 720px) {
+    @media screen and (max-width: $tablets) {
       /* стили для планшета */
       padding: 26px 0;
-      font-size: calc(36px + (65 - 36) * ((100vw - 288px) / (720 - 288)));
-      line-height: calc(50px + (73 - 50) * ((100vw - 288px) / (720 - 288)));
+      font-size: calc(38px + (65 - 38) * ((100vw - 320px) / (720 - 320)));
+      line-height: calc(50px + (73 - 50) * ((100vw - 320px) / (720 - 320)));
     }
   }
 
@@ -78,14 +78,14 @@
     border: 1px solid $textcolor;
     grid-column: 1/2;
 
-    @media screen and (max-width: 1100px) {
+    @media screen and (max-width: $desktop) {
       /* стили для планшета */
-      margin: 0;
+      margin: 2px;
     }
 
-    @media screen and (max-width: 720px) {
+    @media screen and (max-width: $tablets) {
       /* стили для планшета */
-      width: 100%;
+      width: 280px;
     }
 
     &:hover {
@@ -101,16 +101,17 @@
     grid-row: 1/5;
     width: 100%;
 
-    @media screen and (max-width: 1100px) {
+    @media screen and (max-width: $desktop) {
       /* стили для планшета */
-      padding: 0 34px;
-      margin: 92px 0;
+      padding: 100px 34px;
+      max-height: 710px;
     }
 
-    @media screen and (max-width: 720px) {
+    @media screen and (max-width: $tablets) {
       /* стили для планшета */
-      margin: 54px 0;
-      padding: 0;
+      padding: 60px 0;
+      min-width: 280px;
+      height: 322px;
     }
   }
 }

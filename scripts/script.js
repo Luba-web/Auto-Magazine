@@ -57,12 +57,11 @@ function formSubmit(event) {
   firstName.textContent = firstNameInput.value;
   secoundName.textContent = secondNameInput.value;
   email.textContent = emailInput.value;
-  saveBtn.textContent = "Готово!";
 }
 
 function enableSave(evt) {
   evt.preventDefault();
-  saveBtn.textContent = "Подписка";
+  saveBtn.textContent = "Готово!";
 }
 
 //слушатель для открытия бар меню
